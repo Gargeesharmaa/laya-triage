@@ -1,3 +1,35 @@
+# Environment secrets — NEVER commit
 .env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+.venv/
 venv/
-__pycache__/s
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Model cache (regenerable, ~2.4 GB)
+.cache/
+~/.cache/huggingface/
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS
+.DS_Store
+Thumbs.db
